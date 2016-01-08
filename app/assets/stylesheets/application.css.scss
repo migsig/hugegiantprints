@@ -1,10 +1,10 @@
 table{width:100%;margin-bottom: 20px;}
 
-html{ background: #588DDE; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#588DDE, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#588DDE, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#588DDE, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#588DDE, white); /* Standard syntax (must be last) */
+html{ background: #E9E8E4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#E9E8E4, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#E9E8E4, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#E9E8E4, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#E9E8E4, white); /* Standard syntax (must be last) */
 }
 
         body {
@@ -80,7 +80,7 @@ html{ background: #588DDE; /* For browsers that do not support gradients */
 }
 
 .hero{
-  background:url(../../assets/city_bg.png) no-repeat center;
+  background:url('/assets/canvas2.jpg') no-repeat center;
   background-size:cover;
   border:none;
 }
@@ -165,7 +165,7 @@ div.iphone-mockup{
 }
 
 section.features{
-  background-color:#369;
+  background-color:#900;
   padding:40px 0;
   color:#fff;
 }
