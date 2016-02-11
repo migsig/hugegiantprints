@@ -1,0 +1,587 @@
+
+
+table{width:100%;margin-bottom: 20px;}
+
+html{ background: #E9E8E4; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#E9E8E4, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#E9E8E4, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#E9E8E4, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#E9E8E4, white); /* Standard syntax (must be last) */
+}
+
+        body {
+            
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+  
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.navbar{
+  margin-bottom:0;
+  border:none;
+}
+/* mini logo */
+.navbar-brand img {
+    float: left;
+    height: 3.2rem;
+    width: auto;
+    margin: -0.6rem 1rem 0 0;
+}
+
+.navbar{
+  margin-bottom:0;
+  border:none;
+}
+
+.navbar-brand .glyphicon{
+  margin-right:6px;
+}
+
+.hero{
+  background:url('/assets/canvas2.jpg') no-repeat center;
+  background-size:cover;
+  border:none;
+}
+
+@media (min-width:992px) {
+  .hero .get-it{
+    text-align:right;
+    margin-top:80px;
+    padding-right:30px;
+  }
+}
+
+@media (max-width:992px) {
+  .hero .get-it{
+    text-align:center;
+  }
+}
+
+@media (max-width:992px) {
+  .hero .phone-preview{
+    text-align:center;
+  }
+}
+
+.hero .get-it h1, .hero .get-it h2{
+  color:#fff;
+  text-shadow:2px 2px 3px rgba(0,0,0,0.9);
+  margin-bottom:20px;
+}
+
+.hero .get-it .btn{
+  margin-left:10px;
+  margin-bottom:10px;
+  text-shadow:none;
+}
+
+div.iphone-mockup{
+  position:relative;
+  max-width:250px;
+  margin:20px;
+  display:inline-block;
+}
+
+.iphone-mockup img.device{
+  width:100%;
+  height:auto;
+}
+
+.iphone-mockup .screen{
+  position:absolute;
+  width:106%;
+  height:77%;
+  top:12%;
+  border-radius:2px;
+  left:6%;
+  border:1px solid #444;
+  background-color:#aaa;
+  overflow:hidden;
+  background:#000;
+  background-size:fill;
+  background-position:center;
+}
+    
+.iphone-mockup .screen:before{
+  content:'';
+  background-color:#fff;
+  position:absolute;
+  width:70%;
+  height:140%;
+  top:-12%;
+  right:-60%;
+  transform:rotate(-19deg);
+  opacity:0.2;
+}
+
+.icon-feature{
+  text-align:center;
+}
+
+.icon-feature .glyphicon{
+  font-size:60px;
+}
+
+section.features{
+  background-color:#900;
+  padding:40px 0;
+  color:#fff;
+}
+
+.features h2{
+  color:#fff;
+}
+
+.features .icon-features{
+  margin-top:15px;
+}
+
+.testimonials blockquote{
+  text-align:center;
+}
+
+section.testimonials{
+  margin:50px 0;
+}
+
+.site-footer{
+  padding:20px 0;
+  text-align:center;
+}
+
+@media (min-width:768px) {
+  .site-footer h5{
+    text-align:left;
+  }
+}
+
+.site-footer h5{
+  color:inherit;
+  font-size:20px;
+}
+
+.site-footer .social-icons a:hover{
+  opacity:1;
+}
+
+.site-footer .social-icons a{
+  display:inline-block;
+  width:32px;
+  border:none;
+  font-size:20px;
+  border-radius:50%;
+  margin:4px;
+  color:#fff;
+  text-align:center;
+  background-color:#798FA5;
+  height:32px;
+  opacity:0.8;
+  line-height:32px;
+}
+
+@media (min-width:768px) {
+  .site-footer .social-icons{
+    text-align:right;
+  }
+}
+textarea,input{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: black;
+    padding: 10px;
+    }
+
+    @media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+  @media (min-width: 768px) {
+  /* line 379, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+  .navbar-left {
+    float: left !important;
+  }
+
+  /* line 382, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+  .navbar-right {
+    float: right !important;
+    margin-right: -15px;
+  }
+  /* line 386, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+  .navbar-right ~ .navbar-right {
+    margin-right: 0;
+  }
+}
+/* line 397, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+/* line 401, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-brand {
+  color: #777;
+}
+/* line 403, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+/* line 410, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-text {
+  color: #777;
+}
+/* line 415, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #777;
+}
+/* line 418, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #333;
+  background-color: transparent;
+}
+/* line 425, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+/* line 433, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+/* line 442, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+/* line 444, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #ddd;
+}
+/* line 448, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+/* line 453, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+/* line 462, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #e7e7e7;
+  color: #555;
+}
+@media (max-width: 767px) {
+  /* line 473, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  /* line 475, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  /* line 482, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  /* line 490, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+/* line 506, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-link {
+  color: #777;
+}
+/* line 508, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .navbar-link:hover {
+  color: #333;
+}
+/* line 513, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .btn-link {
+  color: #777;
+}
+/* line 515, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
+  color: #333;
+}
+/* line 521, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
+  color: #ccc;
+}
+
+/* line 531, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse {
+  background-color: #222;
+  border-color: #090909;
+}
+/* line 535, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-brand {
+  color: #9d9d9d;
+}
+/* line 537, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+/* line 544, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-text {
+  color: #9d9d9d;
+}
+/* line 549, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: #9d9d9d;
+}
+/* line 552, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+/* line 559, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #090909;
+}
+/* line 567, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+/* line 577, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-toggle {
+  border-color: #333;
+}
+/* line 579, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #333;
+}
+/* line 583, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+/* line 588, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+/* line 596, /Users/migsig/.rvm/gems/ruby-2.2.1/gems/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss */
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #090909;
+  color: #fff;
+}
+}
+  
+.page-header{
+  text-align:center;
+}
+
+.avatar{
+  margin:0 auto;
+}
+
+@media (max-width:767px) {
+  .avatar{
+    padding:20px;
+  }
+}
+
+.social-btns-holder{
+  text-align:center;
+}
+
+.social-btns-holder li{
+  padding:0;
+}
+
+.btn-social{
+  color:white;
+  opacity:0.9;
+  font-size:10px;
+  padding:8px 10px;
+}
+
+@media (max-width:767px) {
+  .btn-social{
+    width:80px;
+  }
+}
+
+.btn-social:hover{
+  color:white;
+  opacity:1;
+}
+
+.btn-facebook{
+  background:#3b5998;
+}
+
+.btn-twitter{
+  background:#00aced;
+}
+
+.btn-linkedin{
+  background:#0e76a8;
+}
+
+.btn-github{
+  background:#000000;
+}
+
+.btn-google{
+  background:#c32f10;
+}
+
+.btn-stackoverflow{
+  background:#D38B28;
+}
+
+.resume-heading .social-btns{
+  margin-top:15px;
+}
+
+.resume .list-group-item:first-child, .resume .list-group-item:last-child{
+  border-radius:0;
+}
+
+.bs-callout{
+  border-color:#eee;
+  border-image:none;
+  border-radius:3px;
+  border-style:solid;
+  border-width:1px 1px 1px 5px;
+  margin-bottom:5px;
+  padding:20px;
+  border-left-color:#d9534f;
+}
+
+.bs-callout:last-child{
+  margin-bottom:0;
+}
+
+.bs-callout h4{
+  margin-bottom:10px;
+  margin-top:0;
+  color:#d9534f;
+}
+
+.panel-body{
+  padding:0;
+}
+
+.inactive-link{
+  pointer-events:none;
+  cursor:default;
+}
+
+.progress-bar-container{
+  position:relative;
+}
+
+.progress-bar{
+  text-align:left;
+  white-space:nowrap;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  cursor:pointer;
+}
+
+span.progress-type{
+  position:absolute;
+  top:0px;
+  left:10px;
+  font-size:12px;
+  line-height:20px;
+  color:#fff;
+}
+
+.progress-meter{
+  min-height:15px;
+  border-bottom:2px solid rgb(160, 160, 160);
+  margin-bottom:15px;
+}
+
+.progress-meter > .meter{
+  position:relative;
+  float:left;
+  min-height:15px;
+  border-width:0px;
+  border-style:solid;
+  border-color:rgb(160, 160, 160);
+  width:25%;
+}
+
+.progress-meter > .meter-left{
+  border-left-width:2px;
+}
+
+.progress-meter > .meter-right{
+  border-right-width:2px;
+  float:right;
+}
+
+.progress-meter > .meter-right:last-child{
+  border-left-width:2px;
+}
+
+.progress-meter > .meter > .meter-text{
+  position:absolute;
+  display:inline-block;
+  bottom:-20px;
+  width:100%;
+  font-weight:700;
+  font-size:0.85em;
+  color:rgb(160, 160, 160);
+  text-align:left;
+}
+
+.progress-meter > .meter.meter-right > .meter-text{
+  text-align:right;
+}
+
