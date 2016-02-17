@@ -9,8 +9,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li role="presentation"><%= link_to "Home", root_path %></li>
                     <li role="presentation"> </li>
-                    <li role="presentation"><%= link_to "About", pages_about %></li>
-                    <li role="presentation"><%= link_to "Contact", pages_contact %></li>
+
 
                     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Place an Order<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
@@ -19,8 +18,28 @@
                             <li><a href="#">From your Computer</a></li>
                         </ul>
                     </li>
-                    <li role="presentation"></li>
+                    <li role="presentation">
+                          
+                    
+                    </li>
                 </ul>
+                <ul class="nav navbar-right col-md-4">
+<% if current_user %>
+<li class="col-md-8 user-name">
+<%= link_to ('<i class="fa fa-user"></i> ' + truncate(current_user.email, length: 25)).html_safe,
+edit_user_registration_path, title: 'Edit Profile' %>
+</li>
+<li class="col-md-1"> </li>
+<li class="col-md-3 logout"><%= link_to('Logout', destroy_user_session_path,
+class: 'btn btn-xs btn-danger', title: 'Logout', :method => :delete) %></li>
+<% else %>
+<li class="col-md-4 pull-right">
+<%= link_to('Sign In', new_user_session_path, class: 'btn btn-primary', title: 'Sign In') %>
+</li>
+<% end %>
+</ul>
+                
             </div>
+      
         </div>
     </nav>

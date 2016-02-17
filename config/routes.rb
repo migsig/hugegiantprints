@@ -1,11 +1,21 @@
 Rails.application.routes.draw do
-  resources :pages
+  get 'order_items/create'
+
+  get 'order_items/update'
+
+  get 'order_items/destroy'
+
+  get 'carts/show'
+
+  get 'products/index'
+
   devise_for :users
   root 'welcome#index'
-    
-    get 'pages/index', to: 'pages#index'
-    get 'pages/about', to: 'pages#new'
-    get 'pages/contact', to: 'pages#contact'
+
+  resources :products, only: [:index]
+  resource :cart, only: [:show]
+  resources :order_items, only: [:create, :update, :destroy]
+  root to: "products#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
